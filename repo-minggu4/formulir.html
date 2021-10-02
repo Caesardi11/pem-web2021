@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir Data Diri</title>
+
+        <style>
+            table{
+                padding-left: 70px;
+            }
+            th, td {
+                padding-bottom: 10px;
+                padding-right: 7px;
+                text-align: justify;
+            }
+        </style>
+
+    </head>
+
+    <body style="font-family: sans-serif;">
+        <form action="tampil.php" method="POST" autocomplete="on">
+            <h2>INFO PENDAFTARAN</h2>
+            <table>
+                <tr>
+                    <th><label for="fNISN">NISN</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="fNISN" name="fNISN"></td>
+                </tr>
+                <tr>
+                    <th><label for="fasal">Asal Sekolah</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="fasal" name="fasal"></td>
+                </tr>
+                <tr>
+                    <th>Tahun Lulus</th>
+                    <th>:</th>
+                    <td>
+                        <input list="tahun_lulus" name="tahun_lulus" size="3">
+                        <datalist id="tahun_lulus">
+                            <option value="2018">
+                            <option value="2019">
+                            <option value="2020">
+                            <option value="2021">
+                        </datalist>
+                    </td>
+                    <td style="padding-left: 400px;"></td>
+                    <td>
+                        <label for="ijazah">Select a file:</label>
+                        <input type="file" id="ijazah" name="ijazah" multiple>
+                        <input type="text" id="ijazah" name="ijazah" value="(Lampirkan fotocopy ijazah)" disabled>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>DATA CALON PESERTA</h2>
+            <table>
+                <tr>
+                    <th><label for="fdiri">Nama Lengkap</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="fdiri" name="fdiri"></td>
+                </tr>
+                <tr>
+                    <th><label for="fNIK">NIK</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="fNIK" name="fNIK"></td>
+                </tr>
+                <tr>
+                    <th><label for="birthday">Tempat, Tanggal Lahir</label></th>
+                    <th>:</th>
+                    <td>
+                        <input type="text" id="birthday" name="birthday" size="9">
+                        ,
+                        <input type= "date" id="birthday" name="birthday">
+                    </td>
+                    <td style="padding-left: 250px;"></td>
+                    <td>
+                        <label for="akte">Select a file:</label>
+                        <input type="file" id="akte" name="akte" multiple>
+                        <input type="text" id="akte" name="akte" value="Fc Akta Kelahiran Legalisir" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <th>:</th>
+                    <td><input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="Palamat">Alamat</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Palamat" name="Palamat"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Pdesa">Desa/Kel.</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Pdesa" name="Pdesa"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Pkec">Kecamatan</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Pkec" name="Pkec"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Pkab">Kabupaten</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Pkab" name="Pkab"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Pprov">Provinsi</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Pprov" name="Pprov"></td>
+                </tr>
+                <tr>
+                    <th><br><label for="email">Email Aktif</label></th>
+                    <th><br>:</th>
+                    <td>
+                        <br>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+            </table>
+            <h2>DATA ORANG TUA</h2>
+            <table>
+                <tr>
+                    <th><label for="KK">Nomor Kartu Keluarga</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="KK" name="Kartu Keluarga"></td>
+                </tr>
+                <tr>
+                    <th><label for="Anama">Nama Ayah Kandung</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Anama" name="Nama Ayah"></td>
+                </tr>
+                <tr>
+                    <th><label for="Aagama">Agama</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Aagama" name="Agama Ayah"></td>
+                </tr>
+                <tr>
+                    <th><label for="Akerja">Pekerjaan</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Akerja" name="Pekerjaan Ayah"></td>
+                </tr>
+                <tr>
+                    <th><label for="Inama">Nama Ibu Kandung</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Inama" name="Nama Ibu"></td>
+                </tr>
+                <tr>
+                    <th><label for="Iagama">Agama</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Iagama" name="Agama Ibu"></td>
+                </tr>
+                <tr>
+                    <th><label for="Ikerja">Pekerjaan</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Ikerja" name="Pekerjaan Ibu"></td>
+                </tr>
+                <tr>
+                    <th><label for="Oalamat">Alamat Orang Tua</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Oalamat" name="Alamat ortu"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Odesa">Desa/Kel.</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Odesa" name="Desa ortu"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Okec">Kecamatan</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Okec" name="Kecamatan ortu"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Okab">Kabupaten</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Okab" name="Kabupaten ortu"></td>
+                </tr>
+                <tr>
+                    <th style="padding-left: 80px;"><label for="Oprov">Provinsi</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="Oprov" name="Provinsi ortu"></td>
+                </tr>
+            </table>
+            <br><br>
+        <input type="submit" formtarget="_blank" value="Submit">
+        <br><br>
+        </form>
+    </body>
+</html>
