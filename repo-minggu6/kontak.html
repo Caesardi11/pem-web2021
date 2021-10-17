@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <style>
+        nav{
+            background-color: #90AACB;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        a{
+            padding-left: 10px;
+        }
+
+        a:link {
+            color: blanchedalmond;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFB085;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #FFB085;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        body{
+            background-color: #FEF1E6;
+        }
+
+        hr{
+            margin-top: 25%;
+        }
+    </style>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cv.pdf" target="_blank">Download CV</a>
+            <a href="tentang.html">About Me</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+        <div>
+            <h1 style="background-color: #F9D5A7; margin-top: 0%;">Kontak Saya</h1>
+            <form style="margin-top: 30px;">
+                <label for="email">Email</label><br/>
+                <input type="email" name="email" placeholder="alamat email"/><br/>
+                <label for="message">Pesan</label><br/>
+                <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
+                <br/><br/>
+                <input type="submit" value="Kirim"/>
+            </form>
+        </div>
+        <hr>
+        <footer style="text-align: center;">
+            <p>Copyright &copy; 2021 Caesar_11</p>
+        </footer>
+    </body>
+</html>
