@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-hijau {
+  background-color: white;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.bg-hijau:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.bg-login {
+  background-color: #20df7f;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.bg-hijau:hover {
+  background-color: #000000;
+  color: #ffffff;
+}

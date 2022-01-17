@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <link rel="stylesheet" href="stylee.css" /> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+		<script type="text/javascript" src=""></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+		<title>KUY NONGKI | Nongkrong Islami</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+		body {
+			font-family: 'Poppins', sans-serif;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.bg-hijau {
+			background-color: white;
+			color: #000000;
+			transition: 0.3s;
+		}
+
+		.bg-hijau:hover {
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		.card-img-top {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.owl-prev {
+			left: -30px;
+		}
+
+		.owl-next {
+			right: -30px;
+		}
+
+		.owl-prev,
+		.owl-next {
+			position: absolute;
+			top: 90px;
+		}
+
+		.owl-prev span,
+		.owl-next span {
+			font-size: 80px;
+			color: black;
+		}
+
+		.card {
+			padding-top: 1rem;
+			background-color: transparent;
+			border-style: none;
+			color: black;
+		}
+
+		.card:hover {
+			padding-top: 1rem;
+			background-color: #9797977e;
+			border-style: none;
+			color: black;
+			box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px 4px rgba(0, 0, 0, 0.19);
+		}
+
+		.gradient-card {
+			/* fallback for old browsers */
+			background: #20df7f;
+
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: -webkit-linear-gradient(to left, #20df7f, #00ff802a);
+
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background: linear-gradient(to left, #20df7f, #00ff802a);
+		}
+
+		.gradient-title {
+			/* fallback for old browsers */
+			background: #20df7f;
+
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: -webkit-linear-gradient(to right, #20df7f, #00ff802a);
+
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background: linear-gradient(to right, #20df7f, #00ff802a);
+		}
+
+		.container {
+			border: 2px solid;
+			border-style: none;
+			border-radius: 40px;
+			padding: 5px;
+		}
+	</style>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light shadow sticky-top" style="background-color: #20df7f">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" height="55%" width="55%" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="ustad.html">Ustadz</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ceramah.html">Ceramah</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="event.html">Event</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">Tentang</a>
+						</li>
+					</ul>
+					<a class="btn bg-hijau rounded-pill d-flex" role="button" href="login.html"><b>Log in</b></a>
+				</div>
+			</div>
+		</nav>
+		<!-- Akhir Navbar -->
+
+		<section id="header-content">
+			<!-- Carousel -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/iklan1.png" class="d-block img-fluid" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="img/iklan2.png" class="d-block img-fluid" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="img/iklan3.png" class="d-block img-fluid" alt="..." />
+					</div>
+					<div class="carousel-item">
+						<img src="img/iklan4.png" class="d-block img-fluid" alt="..." />
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+		<!-- Akhir Carousel -->
+
+		<!-- KONTEN -->
+		<section id="content-isi">
+			<div class="container pt-5" style="width: 40%">
+				<br />
+				<br />
+				<div class="input-group rounded">
+					<input type="search" class="form-control rounded" style="border-color: #20df7f" placeholder="Masukan Kata Kunci" aria-label="Search" aria-describedby="search-addon" />
+					<a href="#">
+						<span class="input-group-text border-0" id="search-addon"> <img src="img/search.png" style="width: 30px" /></span
+					></a>
+				</div>
+			</div>
+		</section>
+		<div class="container pt-5" style="margin-top: 5rem">
+			<div style="width: 15%">
+				<a href="login.html" style="color: black; text-decoration: none">
+					<h4 class="text-center gradient-title" style="border-style: solid; border-radius: 15px; padding-left: 5px; border-style: none; padding-top: 10px; padding-bottom: 10px">Tayang Hari Ini</h4>
+				</a>
+			</div>
+			<div class="container mt-5 gradient-card">
+				<div class="owl-carousel pt-3">
+					<div class="ms-2 me-2">
+						<a href="login.html">
+							<div class="card">
+								<img src="img/card1.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Perbaiki Diri</h5>
+									<br />
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="login.html">
+							<div class="card">
+								<img src="img/card2.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Keutamaan Orang yang Bangun Pagi Waktu Subuh</h5>
+									~USTADZ ABDUL SOMAD LC., MA
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="login.html">
+							<div class="card">
+								<img src="img/card3.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Allah Tau Kamu Kuat</h5>
+									<br />
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="login.html">
+							<div class="card">
+								<img src="img/card4.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Kunci Hidup Sukses Dunia dan Akhirat</h5>
+									~SYEIKH ALI JABER
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="login.html">
+							<div class="card">
+								<img src="img/card5.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Dahsyatnya Yakin Kepada Allah</h5>
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container pt-5" style="margin-top: 5rem">
+			<div style="width: 17%">
+				<a href="besok_hari.html" style="color: black; text-decoration: none">
+					<h4 class="text-center gradient-title" style="border-style: solid; border-radius: 15px; padding-left: 5px; border-style: none; padding-top: 10px; padding-bottom: 10px">Tayang Esok Hari</h4>
+				</a>
+			</div>
+			<div class="container mt-5 gradient-card">
+				<div class="owl-carousel pt-3">
+					<div class="ms-2 me-2">
+						<a href="besok_hari.html">
+							<div class="card">
+								<img src="img/card1.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Perbaiki Diri</h5>
+									<br />
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="besok_hari.html">
+							<div class="card">
+								<img src="img/card2.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Keutamaan Orang yang Bangun Pagi Waktu Subuh</h5>
+									~USTADZ ABDUL SOMAD LC., MA
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="besok_hari.html">
+							<div class="card">
+								<img src="img/card3.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Allah Tau Kamu Kuat</h5>
+									<br />
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="besok_hari.html">
+							<div class="card">
+								<img src="img/card4.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Kunci Hidup Sukses Dunia dan Akhirat</h5>
+									~SYEIKH ALI JABER
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="ms-2 me-2">
+						<a href="besok_hari.html">
+							<div class="card">
+								<img src="img/card5.png" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-tittle">Dahsyatnya Yakin Kepada Allah</h5>
+									~USTADZ HANAN ATTAKI LC
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<section id="footer" style="padding-top: 100px">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path
+					fill="#20DF7F"
+					fill-opacity="1"
+					d="M0,256L48,261.3C96,267,192,277,288,256C384,235,480,181,576,176C672,171,768,213,864,240C960,267,1056,277,1152,266.7C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+				></path>
+				<path
+					fill="#224957"
+					fill-opacity="0.5"
+					d="M0,224L48,213.3C96,203,192,181,288,197.3C384,213,480,267,576,282.7C672,299,768,277,864,245.3C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+				></path>
+			</svg>
+			<div class="text-center" style="position: absolute; margin-top: -30px; padding-left: 20px; color: white">© 2021 ARDI CAESAR - ALL RIGHTS RESERVED</div>
+		</section>
+		<!-- Akhir Footer -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script type="text/javascript"></script>
+		<script src="jquery/jquery.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
